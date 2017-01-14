@@ -1,26 +1,213 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="OrlandoSpas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaPic" translatesAutoresizingMaskIntoConstraints="NO" id="6vs-0F-B1h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeV-w6-rPw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orlando Spas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-fD-fbZ">
+                                        <rect key="frame" x="30" y="18.5" width="260" height="53"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="44"/>
+                                        <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="97"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Nka-fD-fbZ" firstAttribute="centerX" secondItem="SeV-w6-rPw" secondAttribute="centerX" id="8aJ-5B-UwC"/>
+                                    <constraint firstAttribute="height" constant="90" id="UA7-62-R3Z">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstItem="Nka-fD-fbZ" firstAttribute="centerY" secondItem="SeV-w6-rPw" secondAttribute="centerY" id="hIv-wK-7JD"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAd-G3-LXm">
+                                <rect key="frame" x="16" y="90" width="298" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ycz-bC-xtW">
+                                <rect key="frame" x="0.0" y="90" width="320" height="217"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="Raz-z5-kh6"/>
+                                </constraints>
+                                <string key="text">Here in Orlando Spas we'd like to help you to find the most comfortable and convientient spas for your enjoyment. Whenever your're ready click on the button below to start your journey!</string>
+                                <color key="textColor" red="0.94200399044062422" green="1" blue="0.35984010997141802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-N4-myL">
+                                <rect key="frame" x="76.5" y="315" width="167" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="fAy-FL-dIz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Find Your Spa!">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MZq-Xw-CvT" kind="show" id="dja-yI-EzK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ycz-bC-xtW" secondAttribute="trailing" id="9AP-tX-JKX"/>
+                            <constraint firstItem="RbY-N4-myL" firstAttribute="top" secondItem="Ycz-bC-xtW" secondAttribute="bottom" constant="8" id="ErW-wy-7fd"/>
+                            <constraint firstItem="Ycz-bC-xtW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FMn-FP-qbR"/>
+                            <constraint firstAttribute="trailing" secondItem="6vs-0F-B1h" secondAttribute="trailing" id="GDb-eR-mWt"/>
+                            <constraint firstItem="SeV-w6-rPw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KYb-Ne-sDz"/>
+                            <constraint firstItem="6vs-0F-B1h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RXL-NS-0kO"/>
+                            <constraint firstItem="SeV-w6-rPw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V3Z-rK-t0i"/>
+                            <constraint firstItem="6vs-0F-B1h" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gzI-NN-eeJ"/>
+                            <constraint firstItem="Ycz-bC-xtW" firstAttribute="top" secondItem="SeV-w6-rPw" secondAttribute="bottom" id="hvD-b6-exp"/>
+                            <constraint firstAttribute="trailing" secondItem="SeV-w6-rPw" secondAttribute="trailing" id="oa6-XG-w8V"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6vs-0F-B1h" secondAttribute="bottom" id="sP5-5J-ZG1"/>
+                            <constraint firstItem="RbY-N4-myL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t5a-U9-V8g"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="136.25"/>
+        </scene>
+        <!--Select SpaVC-->
+        <scene sceneID="xuD-SA-J77">
+            <objects>
+                <viewController id="MZq-Xw-CvT" customClass="SelectSpaVC" customModule="OrlandoSpas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R0a-C5-T8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="7g0-6p-dEV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VqK-lw-MhW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-rt-KFB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaPic" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-2s-sLr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Spa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lls-dj-PcH">
+                                        <rect key="frame" x="62.5" y="8" width="195.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-bL-o2b">
+                                        <rect key="frame" x="35" y="49" width="251" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="Iy0-Ne-sQC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Click To Find Spas Near You">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bQB-2s-sLr" secondAttribute="bottom" id="Axf-t7-42X"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQB-2s-sLr" secondAttribute="trailing" id="BVN-zi-HRh"/>
+                                    <constraint firstItem="lls-dj-PcH" firstAttribute="top" secondItem="VeJ-rt-KFB" secondAttribute="top" constant="8" id="OQ4-Oy-jqo"/>
+                                    <constraint firstItem="fTE-bL-o2b" firstAttribute="centerX" secondItem="VeJ-rt-KFB" secondAttribute="centerX" id="U2s-ih-707"/>
+                                    <constraint firstAttribute="height" constant="170" id="dwZ-5M-RkW"/>
+                                    <constraint firstItem="bQB-2s-sLr" firstAttribute="top" secondItem="VeJ-rt-KFB" secondAttribute="top" id="ghf-Fv-LhL"/>
+                                    <constraint firstItem="fTE-bL-o2b" firstAttribute="top" secondItem="lls-dj-PcH" secondAttribute="bottom" constant="8" id="hLi-5U-5tH"/>
+                                    <constraint firstItem="bQB-2s-sLr" firstAttribute="leading" secondItem="VeJ-rt-KFB" secondAttribute="leading" id="qcL-ye-0fY"/>
+                                    <constraint firstItem="lls-dj-PcH" firstAttribute="centerX" secondItem="VeJ-rt-KFB" secondAttribute="centerX" id="yCL-1V-Xro"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3zi-Tn-Uy1">
+                                <rect key="frame" x="0.0" y="170" width="320" height="310"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="gxB-KL-H3J">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gxB-KL-H3J" id="aKr-be-DTA">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MandaraPic" translatesAutoresizingMaskIntoConstraints="NO" id="J7W-QS-DJ5">
+                                                    <rect key="frame" x="8" y="9" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="A3l-4J-OZq"/>
+                                                        <constraint firstAttribute="height" constant="70" id="iaF-aO-HRi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mandara Spa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fw-YF-Snu">
+                                                    <rect key="frame" x="98" y="9" width="222" height="71"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="71" id="bM3-gP-oMe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="J7W-QS-DJ5" firstAttribute="centerY" secondItem="aKr-be-DTA" secondAttribute="centerY" id="3e3-Mn-Tlo"/>
+                                                <constraint firstItem="0Fw-YF-Snu" firstAttribute="centerY" secondItem="aKr-be-DTA" secondAttribute="centerY" id="8Ry-FS-Ie5"/>
+                                                <constraint firstItem="J7W-QS-DJ5" firstAttribute="leading" secondItem="aKr-be-DTA" secondAttribute="leadingMargin" id="Jn4-tZ-Ize"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Fw-YF-Snu" secondAttribute="trailing" id="Ry1-Qe-j3U"/>
+                                                <constraint firstItem="0Fw-YF-Snu" firstAttribute="leading" secondItem="J7W-QS-DJ5" secondAttribute="trailing" constant="20" id="i47-KG-zHt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3zi-Tn-Uy1" firstAttribute="leading" secondItem="VqK-lw-MhW" secondAttribute="leading" id="0f6-rL-GZN"/>
+                            <constraint firstItem="3zi-Tn-Uy1" firstAttribute="top" secondItem="VeJ-rt-KFB" secondAttribute="bottom" id="2iG-kq-l9I"/>
+                            <constraint firstItem="7g0-6p-dEV" firstAttribute="top" secondItem="3zi-Tn-Uy1" secondAttribute="bottom" id="4oZ-Hd-eAO"/>
+                            <constraint firstAttribute="trailing" secondItem="3zi-Tn-Uy1" secondAttribute="trailing" id="EBC-qC-waL"/>
+                            <constraint firstAttribute="trailing" secondItem="VeJ-rt-KFB" secondAttribute="trailing" id="RJC-ls-C7e"/>
+                            <constraint firstItem="VeJ-rt-KFB" firstAttribute="top" secondItem="VqK-lw-MhW" secondAttribute="top" id="cS5-MR-drr"/>
+                            <constraint firstItem="VeJ-rt-KFB" firstAttribute="leading" secondItem="VqK-lw-MhW" secondAttribute="leading" id="gC1-AW-dLV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nc8-8z-iis" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948.75" y="135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MandaraPic" width="448" height="298"/>
+        <image name="SpaPic" width="623" height="500"/>
+    </resources>
 </document>
