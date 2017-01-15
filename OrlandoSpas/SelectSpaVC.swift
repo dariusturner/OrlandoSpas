@@ -41,6 +41,20 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let spa12 = Spa(image: #imageLiteral(resourceName: "AsiaDayPic"), spaUrl: "http://www.acquadayspa.com", spaName: "Aqua Day Spa")
         
+        let spa13 = Spa(image: "", spaUrl: "https://parloursalonandspa.com", spaName: "Parlour Salon And Spa")
+        
+        let spa14 = Spa(image: "", spaUrl: "http://flawlesswaxnspa.com/site/", spaName: "Flawless Wax & Spa")
+        
+        let spa15 = Spa(image: "", spaUrl: "http://jbaumansalon.com", spaName: "J.  Bauman Salon")
+        
+        let spa16 = Spa(image: "", spaUrl: "http://www.shalasalon.com", spaName: "Shala Salon & Spa")
+        
+        let spa17 = Spa(image: "", spaUrl: "https://disneyworld.disney.go.com/spas/saratoga-springs-resort-and-spa/senses-spa-saratoga/", spaName: "Senses - Disney Spa")
+        
+        let spa18 = Spa(image: "", spaUrl: "http://www.lightrx.com/orlando", spaName: "Light RX Face & Body")
+        
+        let spa19 = Spa(image: "", spaUrl: "http://www.tsecret.com", spaName: "T Secret")
+        
         spas.append(spa1)
         spas.append(spa2)
         spas.append(spa3)
@@ -53,6 +67,13 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         spas.append(spa10)
         spas.append(spa11)
         spas.append(spa12)
+        spas.append(spa13)
+        spas.append(spa14)
+        spas.append(spa15)
+        spas.append(spa16)
+        spas.append(spa17)
+        spas.append(spa18)
+        spas.append(spa19)
         
         tableView.delegate = self
         tableView.dataSource = self
