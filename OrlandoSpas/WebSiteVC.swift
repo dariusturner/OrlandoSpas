@@ -28,10 +28,11 @@ class WebSiteVC: UIViewController {
 
         titleLbl.text = spa.spaName
         webView.loadRequest(NSURLRequest(url: NSURL(string: "\(spa.spaUrl)")! as URL) as URLRequest)
+        webView.allowsLinkPreview = true
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
+    
 }
