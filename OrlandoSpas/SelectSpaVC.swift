@@ -31,7 +31,7 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let spa7 = Spa(image: #imageLiteral(resourceName: "BellaVitaPic"), spaUrl: "http://bellavitamedispa.com", spaName: "Bella Vita Medi Spa")
         
-        let spa8 = Spa(image: #imageLiteral(resourceName: "WoodhouseDayPic"), spaUrl: "https://sanantoniorim.woodhousespas.com", spaName: "Woodhouse Day Spa")
+        let spa8 = Spa(image: #imageLiteral(resourceName: "WoodhouseDayPic"), spaUrl: "https://orlando.woodhousespas.com", spaName: "Woodhouse Day Spa")
         
         let spa9 = Spa(image: #imageLiteral(resourceName: "AvalonPic"), spaUrl: "http://www.avalon-massage.com", spaName: "Avalon Massage & Health Spa")
         

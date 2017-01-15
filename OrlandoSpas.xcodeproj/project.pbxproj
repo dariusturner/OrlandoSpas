@@ -16,6 +16,7 @@
 		6A1DB57F1E2B025700ED8468 /* SpaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB57E1E2B025700ED8468 /* SpaCell.swift */; };
 		6A1DB5811E2B040E00ED8468 /* Spa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB5801E2B040E00ED8468 /* Spa.swift */; };
 		6A66AFE61E2B29F900A95BDA /* WebSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66AFE51E2B29F900A95BDA /* WebSiteVC.swift */; };
+		6A66AFEB1E2B3BB500A95BDA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A66AFEA1E2B3BB500A95BDA /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +47,10 @@
 		6A1DB57E1E2B025700ED8468 /* SpaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaCell.swift; sourceTree = "<group>"; };
 		6A1DB5801E2B040E00ED8468 /* Spa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spa.swift; sourceTree = "<group>"; };
 		6A66AFE21E2B241C00A95BDA /* OrlandoSpas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrlandoSpas.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A66AFE31E2B241C00A95BDA /* OrlandoSpasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OrlandoSpasTests.xctest; path = "/Users/DariusTurner/Documents/Apps/iOS Apps/OrlandoSpas/build/Debug-iphoneos/OrlandoSpasTests.xctest"; sourceTree = "<absolute>"; };
-		6A66AFE41E2B241C00A95BDA /* OrlandoSpasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OrlandoSpasUITests.xctest; path = "/Users/DariusTurner/Documents/Apps/iOS Apps/OrlandoSpas/build/Debug-iphoneos/OrlandoSpasUITests.xctest"; sourceTree = "<absolute>"; };
 		6A66AFE51E2B29F900A95BDA /* WebSiteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSiteVC.swift; sourceTree = "<group>"; };
+		6A66AFE71E2B3A8700A95BDA /* OrlandoSpasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrlandoSpasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A66AFE81E2B3A8700A95BDA /* OrlandoSpasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrlandoSpasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A66AFEA1E2B3BB500A95BDA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A66AFEB1E2B3BB500A95BDA /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,9 @@
 			children = (
 				6A1DB5451E2AE3F700ED8468 /* OrlandoSpas */,
 				6A66AFE21E2B241C00A95BDA /* OrlandoSpas.app */,
+				6A66AFE71E2B3A8700A95BDA /* OrlandoSpasTests.xctest */,
+				6A66AFE81E2B3A8700A95BDA /* OrlandoSpasUITests.xctest */,
+				6A66AFE91E2B3BB500A95BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +131,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		6A66AFE91E2B3BB500A95BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A66AFEA1E2B3BB500A95BDA /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,7 +174,7 @@
 			);
 			name = OrlandoSpasTests;
 			productName = OrlandoSpasTests;
-			productReference = 6A66AFE31E2B241C00A95BDA /* OrlandoSpasTests.xctest */;
+			productReference = 6A66AFE71E2B3A8700A95BDA /* OrlandoSpasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6A1DB5641E2AE3F700ED8468 /* OrlandoSpasUITests */ = {
@@ -178,7 +192,7 @@
 			);
 			name = OrlandoSpasUITests;
 			productName = OrlandoSpasUITests;
-			productReference = 6A66AFE41E2B241C00A95BDA /* OrlandoSpasUITests.xctest */;
+			productReference = 6A66AFE81E2B3A8700A95BDA /* OrlandoSpasUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -420,7 +434,7 @@
 				DEVELOPMENT_TEAM = 5T67JA7M7W;
 				INFOPLIST_FILE = OrlandoSpas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DariusTurner.OrlandoSpas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DariusTurner.OrlandoSpas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -434,7 +448,7 @@
 				DEVELOPMENT_TEAM = 5T67JA7M7W;
 				INFOPLIST_FILE = OrlandoSpas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DariusTurner.OrlandoSpas;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DariusTurner.OrlandoSpas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

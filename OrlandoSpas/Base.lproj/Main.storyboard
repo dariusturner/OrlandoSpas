@@ -120,7 +120,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpaPic" translatesAutoresizingMaskIntoConstraints="NO" id="bQB-2s-sLr">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-bL-o2b">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTE-bL-o2b">
                                         <rect key="frame" x="29" y="76" width="262" height="49"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="Iy0-Ne-sQC"/>
