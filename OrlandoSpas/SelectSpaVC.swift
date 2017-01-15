@@ -75,5 +75,21 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return spas.count
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let spa = spas[indexPath.row]
+        
+        performSegue(withIdentifier: "WebSiteVC", sender: spa)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? WebSiteVC {
+            
+            if let selected = sender as? Spa {
+                destination.spa = selected
+            }
+        }
+    }
 
 }

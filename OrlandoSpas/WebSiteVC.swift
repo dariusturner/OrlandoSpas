@@ -11,6 +11,7 @@ import UIKit
 class WebSiteVC: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var titleLbl: UILabel!
     
     private var _spa: Spa!
     
@@ -25,9 +26,12 @@ class WebSiteVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLbl.text = spa.spaName
+        webView.loadRequest(NSURLRequest(url: NSURL(string: "\(spa.spaUrl)")! as URL) as URLRequest)
     }
 
-    
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
 }

@@ -206,6 +206,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="3zi-Tn-Uy1" id="bms-se-1Mw"/>
+                        <segue destination="FM8-Co-5GD" kind="show" identifier="WebSiteVC" id="wVi-2g-b7V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nc8-8z-iis" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,12 +230,19 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-FX-4gI">
                                         <rect key="frame" x="0.0" y="20" width="63" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="FV7-0m-sEH"/>
+                                            <constraint firstAttribute="width" constant="63" id="Syw-UU-oe1"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="&lt; BACK"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="FM8-Co-5GD" eventType="touchUpInside" id="2FC-J8-70M"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mandara Spa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ9-V4-v40">
-                                        <rect key="frame" x="113.5" y="14.5" width="147" height="46.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="29"/>
+                                        <rect key="frame" x="71" y="18" width="304" height="39"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -242,13 +250,15 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="DqY-0U-u9X"/>
-                                    <constraint firstItem="EZ9-V4-v40" firstAttribute="centerX" secondItem="z2O-rV-pHs" secondAttribute="centerX" id="Otu-qr-hCw"/>
                                     <constraint firstItem="xKj-FX-4gI" firstAttribute="centerY" secondItem="z2O-rV-pHs" secondAttribute="centerY" id="QTa-t8-yKo"/>
+                                    <constraint firstItem="EZ9-V4-v40" firstAttribute="centerY" secondItem="z2O-rV-pHs" secondAttribute="centerY" id="Ug2-Su-Lya"/>
+                                    <constraint firstItem="EZ9-V4-v40" firstAttribute="leading" secondItem="xKj-FX-4gI" secondAttribute="trailing" constant="8" id="WTm-SP-LA3"/>
                                     <constraint firstItem="xKj-FX-4gI" firstAttribute="leading" secondItem="z2O-rV-pHs" secondAttribute="leading" id="XrH-nS-WV9"/>
-                                    <constraint firstItem="EZ9-V4-v40" firstAttribute="centerY" secondItem="z2O-rV-pHs" secondAttribute="centerY" id="mkk-St-HXt"/>
+                                    <constraint firstItem="xKj-FX-4gI" firstAttribute="leading" secondItem="z2O-rV-pHs" secondAttribute="leading" id="ixt-7P-xLr"/>
+                                    <constraint firstAttribute="trailing" secondItem="EZ9-V4-v40" secondAttribute="trailing" id="uiw-9U-dVV"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-wX-pkr">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzH-wX-pkr">
                                 <rect key="frame" x="0.0" y="75" width="375" height="592"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -267,6 +277,10 @@
                             <constraint firstItem="z2O-rV-pHs" firstAttribute="top" secondItem="qnx-Om-XWr" secondAttribute="top" id="xRj-HK-atk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="EZ9-V4-v40" id="WFs-vP-Nk2"/>
+                        <outlet property="webView" destination="hzH-wX-pkr" id="0rl-bO-5Fn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SIf-SB-pkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
