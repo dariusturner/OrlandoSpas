@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094939D33111225D756CEEDC /* Pods_OrlandoSpasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B379A60FD63FA1BF2B81B1 /* Pods_OrlandoSpasUITests.framework */; };
 		6A1DB5471E2AE3F700ED8468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB5461E2AE3F700ED8468 /* AppDelegate.swift */; };
 		6A1DB5491E2AE3F700ED8468 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB5481E2AE3F700ED8468 /* MainVC.swift */; };
 		6A1DB54C1E2AE3F700ED8468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A1DB54A1E2AE3F700ED8468 /* Main.storyboard */; };
@@ -16,7 +17,16 @@
 		6A1DB57F1E2B025700ED8468 /* SpaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB57E1E2B025700ED8468 /* SpaCell.swift */; };
 		6A1DB5811E2B040E00ED8468 /* Spa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1DB5801E2B040E00ED8468 /* Spa.swift */; };
 		6A66AFE61E2B29F900A95BDA /* WebSiteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66AFE51E2B29F900A95BDA /* WebSiteVC.swift */; };
-		6A66AFEB1E2B3BB500A95BDA /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A66AFEA1E2B3BB500A95BDA /* iAd.framework */; };
+		6A84BC051E305C8F003138C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A84BC041E305C8F003138C0 /* GoogleService-Info.plist */; };
+		6A84BC0E1E306370003138C0 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC081E306370003138C0 /* FirebaseAnalytics.framework */; };
+		6A84BC0F1E306370003138C0 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC091E306370003138C0 /* FirebaseCore.framework */; };
+		6A84BC101E306370003138C0 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC0A1E306370003138C0 /* FirebaseInstanceID.framework */; };
+		6A84BC111E306370003138C0 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC0B1E306370003138C0 /* GoogleInterchangeUtilities.framework */; };
+		6A84BC121E306370003138C0 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC0C1E306370003138C0 /* GoogleSymbolUtilities.framework */; };
+		6A84BC131E306370003138C0 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A84BC0D1E306370003138C0 /* GoogleToolboxForMac.framework */; };
+		6AF130711E50E698000B4BB6 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF130701E50E698000B4BB6 /* GoogleMobileAds.framework */; };
+		BE5CA566B5DF0A249451DAF1 /* Pods_OrlandoSpasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C85B7F7A9233637988D5F52 /* Pods_OrlandoSpasTests.framework */; };
+		DEAF3FDBB6E5C5D7ACEEA8E1 /* Pods_OrlandoSpas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0BF6592169879179C88675 /* Pods_OrlandoSpas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0088F5C7D294FD5AC66BA0BD /* Pods-OrlandoSpas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpas.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpas/Pods-OrlandoSpas.release.xcconfig"; sourceTree = "<group>"; };
+		5A0BF6592169879179C88675 /* Pods_OrlandoSpas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoSpas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B379A60FD63FA1BF2B81B1 /* Pods_OrlandoSpasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoSpasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1DB5461E2AE3F700ED8468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A1DB5481E2AE3F700ED8468 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		6A1DB54B1E2AE3F700ED8468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +64,21 @@
 		6A66AFE71E2B3A8700A95BDA /* OrlandoSpasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrlandoSpasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A66AFE81E2B3A8700A95BDA /* OrlandoSpasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrlandoSpasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A66AFEA1E2B3BB500A95BDA /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		6A84BC021E2EBD11003138C0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6A84BC041E305C8F003138C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6A84BC081E306370003138C0 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		6A84BC091E306370003138C0 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		6A84BC0A1E306370003138C0 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6A84BC0B1E306370003138C0 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		6A84BC0C1E306370003138C0 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		6A84BC0D1E306370003138C0 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		6AF130701E50E698000B4BB6 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = ../../../Firebase/AdMob/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		6C85B7F7A9233637988D5F52 /* Pods_OrlandoSpasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrlandoSpasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		700308D6F51226EDDB6E25AA /* Pods-OrlandoSpasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpasTests/Pods-OrlandoSpasTests.release.xcconfig"; sourceTree = "<group>"; };
+		86CFB4B332C0BC57D6FF45E1 /* Pods-OrlandoSpasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpasUITests/Pods-OrlandoSpasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4DFB0938D37684C0B307FEA /* Pods-OrlandoSpas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpas/Pods-OrlandoSpas.debug.xcconfig"; sourceTree = "<group>"; };
+		EEC3DEB7E562C0FF61F95CF5 /* Pods-OrlandoSpasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpasUITests/Pods-OrlandoSpasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F06DB1C6404D5119412B44D7 /* Pods-OrlandoSpasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrlandoSpasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrlandoSpasTests/Pods-OrlandoSpasTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +86,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A66AFEB1E2B3BB500A95BDA /* iAd.framework in Frameworks */,
+				6A84BC131E306370003138C0 /* GoogleToolboxForMac.framework in Frameworks */,
+				6A84BC121E306370003138C0 /* GoogleSymbolUtilities.framework in Frameworks */,
+				6AF130711E50E698000B4BB6 /* GoogleMobileAds.framework in Frameworks */,
+				6A84BC0E1E306370003138C0 /* FirebaseAnalytics.framework in Frameworks */,
+				6A84BC0F1E306370003138C0 /* FirebaseCore.framework in Frameworks */,
+				6A84BC101E306370003138C0 /* FirebaseInstanceID.framework in Frameworks */,
+				6A84BC111E306370003138C0 /* GoogleInterchangeUtilities.framework in Frameworks */,
+				DEAF3FDBB6E5C5D7ACEEA8E1 /* Pods_OrlandoSpas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5CA566B5DF0A249451DAF1 /* Pods_OrlandoSpasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,26 +109,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094939D33111225D756CEEDC /* Pods_OrlandoSpasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142DE006CE37C514DED618D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4DFB0938D37684C0B307FEA /* Pods-OrlandoSpas.debug.xcconfig */,
+				0088F5C7D294FD5AC66BA0BD /* Pods-OrlandoSpas.release.xcconfig */,
+				F06DB1C6404D5119412B44D7 /* Pods-OrlandoSpasTests.debug.xcconfig */,
+				700308D6F51226EDDB6E25AA /* Pods-OrlandoSpasTests.release.xcconfig */,
+				EEC3DEB7E562C0FF61F95CF5 /* Pods-OrlandoSpasUITests.debug.xcconfig */,
+				86CFB4B332C0BC57D6FF45E1 /* Pods-OrlandoSpasUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A1DB53A1E2AE3F700ED8468 = {
 			isa = PBXGroup;
 			children = (
+				6AF130701E50E698000B4BB6 /* GoogleMobileAds.framework */,
+				6A84BC081E306370003138C0 /* FirebaseAnalytics.framework */,
+				6A84BC091E306370003138C0 /* FirebaseCore.framework */,
+				6A84BC0A1E306370003138C0 /* FirebaseInstanceID.framework */,
+				6A84BC0B1E306370003138C0 /* GoogleInterchangeUtilities.framework */,
+				6A84BC0C1E306370003138C0 /* GoogleSymbolUtilities.framework */,
+				6A84BC0D1E306370003138C0 /* GoogleToolboxForMac.framework */,
 				6A1DB5451E2AE3F700ED8468 /* OrlandoSpas */,
 				6A66AFE21E2B241C00A95BDA /* OrlandoSpas.app */,
 				6A66AFE71E2B3A8700A95BDA /* OrlandoSpasTests.xctest */,
 				6A66AFE81E2B3A8700A95BDA /* OrlandoSpasUITests.xctest */,
 				6A66AFE91E2B3BB500A95BDA /* Frameworks */,
+				142DE006CE37C514DED618D4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6A1DB5451E2AE3F700ED8468 /* OrlandoSpas */ = {
 			isa = PBXGroup;
 			children = (
+				6A84BC041E305C8F003138C0 /* GoogleService-Info.plist */,
 				6A1DB5781E2AED2C00ED8468 /* Model */,
 				6A1DB5771E2AED2600ED8468 /* View */,
 				6A1DB5791E2AED3500ED8468 /* Controller */,
@@ -134,7 +193,11 @@
 		6A66AFE91E2B3BB500A95BDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A84BC021E2EBD11003138C0 /* AdSupport.framework */,
 				6A66AFEA1E2B3BB500A95BDA /* iAd.framework */,
+				5A0BF6592169879179C88675 /* Pods_OrlandoSpas.framework */,
+				6C85B7F7A9233637988D5F52 /* Pods_OrlandoSpasTests.framework */,
+				66B379A60FD63FA1BF2B81B1 /* Pods_OrlandoSpasUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A1DB56E1E2AE3F700ED8468 /* Build configuration list for PBXNativeTarget "OrlandoSpas" */;
 			buildPhases = (
+				8EA31CFB63817B66C86DFBF0 /* [CP] Check Pods Manifest.lock */,
 				6A1DB53F1E2AE3F700ED8468 /* Sources */,
 				6A1DB5401E2AE3F700ED8468 /* Frameworks */,
 				6A1DB5411E2AE3F700ED8468 /* Resources */,
+				BEA7DD8BA1383A80BF1A00F4 /* [CP] Embed Pods Frameworks */,
+				B32BA0525227D044AB28B7CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A1DB5711E2AE3F700ED8468 /* Build configuration list for PBXNativeTarget "OrlandoSpasTests" */;
 			buildPhases = (
+				405B8ED8005FA8D2C017A105 /* [CP] Check Pods Manifest.lock */,
 				6A1DB5561E2AE3F700ED8468 /* Sources */,
 				6A1DB5571E2AE3F700ED8468 /* Frameworks */,
 				6A1DB5581E2AE3F700ED8468 /* Resources */,
+				FD17C209FB155D66F64D81BB /* [CP] Embed Pods Frameworks */,
+				12DA6C823C87EB7EB7C351FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A1DB5741E2AE3F700ED8468 /* Build configuration list for PBXNativeTarget "OrlandoSpasUITests" */;
 			buildPhases = (
+				E534353FF14E3AAD516D43B2 /* [CP] Check Pods Manifest.lock */,
 				6A1DB5611E2AE3F700ED8468 /* Sources */,
 				6A1DB5621E2AE3F700ED8468 /* Frameworks */,
 				6A1DB5631E2AE3F700ED8468 /* Resources */,
+				6BAD22B77C87F655C28C2828 /* [CP] Embed Pods Frameworks */,
+				2B23C294389C9CEDDBDC6164 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1DB5541E2AE3F700ED8468 /* LaunchScreen.storyboard in Resources */,
+				6A84BC051E305C8F003138C0 /* GoogleService-Info.plist in Resources */,
 				6A1DB5511E2AE3F700ED8468 /* Assets.xcassets in Resources */,
 				6A1DB54C1E2AE3F700ED8468 /* Main.storyboard in Resources */,
 			);
@@ -270,6 +343,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12DA6C823C87EB7EB7C351FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpasTests/Pods-OrlandoSpasTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B23C294389C9CEDDBDC6164 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpasUITests/Pods-OrlandoSpasUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		405B8ED8005FA8D2C017A105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6BAD22B77C87F655C28C2828 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpasUITests/Pods-OrlandoSpasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA31CFB63817B66C86DFBF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B32BA0525227D044AB28B7CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpas/Pods-OrlandoSpas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA7DD8BA1383A80BF1A00F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpas/Pods-OrlandoSpas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E534353FF14E3AAD516D43B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD17C209FB155D66F64D81BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrlandoSpasTests/Pods-OrlandoSpasTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A1DB53F1E2AE3F700ED8468 /* Sources */ = {
@@ -352,6 +563,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -374,7 +586,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +614,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -418,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -429,11 +642,16 @@
 		};
 		6A1DB56F1E2AE3F700ED8468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DFB0938D37684C0B307FEA /* Pods-OrlandoSpas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5T67JA7M7W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OrlandoSpas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DariusTurner.OrlandoSpas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,11 +662,16 @@
 		};
 		6A1DB5701E2AE3F700ED8468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0088F5C7D294FD5AC66BA0BD /* Pods-OrlandoSpas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5T67JA7M7W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OrlandoSpas/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DariusTurner.OrlandoSpas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,6 +682,7 @@
 		};
 		6A1DB5721E2AE3F700ED8468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F06DB1C6404D5119412B44D7 /* Pods-OrlandoSpasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +698,7 @@
 		};
 		6A1DB5731E2AE3F700ED8468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700308D6F51226EDDB6E25AA /* Pods-OrlandoSpasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +714,7 @@
 		};
 		6A1DB5751E2AE3F700ED8468 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC3DEB7E562C0FF61F95CF5 /* Pods-OrlandoSpasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5T67JA7M7W;
@@ -503,6 +729,7 @@
 		};
 		6A1DB5761E2AE3F700ED8468 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CFB4B332C0BC57D6FF45E1 /* Pods-OrlandoSpasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5T67JA7M7W;

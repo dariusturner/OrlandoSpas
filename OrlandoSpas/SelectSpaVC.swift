@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var bannerView: GADBannerView!
+    
+    var interstitial: GADInterstitial!
     
     var spas = [Spa]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        createAndLoadInterstitial()
+        
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        bannerView.adUnitID = "ca-app-pub-8663997758410745/1449565519"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
 
         let spa1 = Spa(image: #imageLiteral(resourceName: "MandaraPic"), spaUrl: "http://www.mandaraspa.ca", spaName: "Mandara Spa")
         
@@ -55,6 +66,14 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         
         let spa19 = Spa(image: "", spaUrl: "http://www.tsecret.com", spaName: "T Secret")
         
+        let spa20 = Spa(image: "", spaUrl: "http://infinitewellnessmedspa.com", spaName: "Infinite Wellness Medspa")
+        
+        let spa21 = Spa(image: "", spaUrl: "http://www.saltroomorlando.com", spaName: "The Salt Room")
+        
+        let spa22 = Spa(image: "", spaUrl: "http://lotusblossommassage.com", spaName: "Lotus Blossom Day Spa")
+        
+        let spa23 = Spa(image: "", spaUrl: "http://www.essentialsmetrowest.com", spaName: "Essentials Spa & Salon")
+        
         spas.append(spa1)
         spas.append(spa2)
         spas.append(spa3)
@@ -74,9 +93,24 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         spas.append(spa17)
         spas.append(spa18)
         spas.append(spa19)
+        spas.append(spa20)
+        spas.append(spa21)
+        spas.append(spa22)
+        spas.append(spa23)
+        
+        _ = spas.sort { $0.spaName < $1.spaName }
         
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    fileprivate func createAndLoadInterstitial() {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8663997758410745/9514655110")
+        let request = GADRequest()
+        // Request test ads on devices you specify. Your test device ID is printed to the console when
+        // an ad request is made.
+        request.testDevices = [ kGADSimulatorID ]
+        interstitial.load(request)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,9 +133,17 @@ class SelectSpaVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        createAndLoadInterstitial()
+        
         let spa = spas[indexPath.row]
         
         performSegue(withIdentifier: "WebSiteVC", sender: spa)
+        
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        } else {
+            print("Ad wasn't ready")
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
